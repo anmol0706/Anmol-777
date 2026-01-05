@@ -5,7 +5,7 @@ import { motion, useInView } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Mail, MapPin, Send, Github, Linkedin, Twitter, CheckCircle, Loader2, Instagram } from 'lucide-react';
+import { Mail, MapPin, Send, Github, Linkedin, CheckCircle, Loader2, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -30,7 +30,7 @@ const contactInfo = [
 const socialLinks = [
     { icon: Github, label: 'GitHub', href: 'https://github.com/anmol0706' },
     { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com/in/anmol-malviya' },
-    { icon: Twitter, label: 'Twitter', href: 'https://twitter.com' },
+
     { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/anmol_20_7_/?hl=en' },
 ];
 

@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Code2, Heart, Github, Linkedin, Twitter, Mail, ArrowUp, Instagram } from 'lucide-react';
+import { Code2, Heart, Github, Linkedin, Mail, ArrowUp, Instagram } from 'lucide-react';
 import Link from 'next/link';
 
 const footerLinks = {
@@ -16,7 +16,7 @@ const footerLinks = {
     social: [
         { icon: Github, href: 'https://github.com/anmol0706', label: 'GitHub' },
         { icon: Linkedin, href: 'https://linkedin.com/in/anmol-malviya', label: 'LinkedIn' },
-        { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+
         { icon: Instagram, href: 'https://www.instagram.com/anmol_20_7_/?hl=en', label: 'Instagram' },
         { icon: Mail, href: 'mailto:anmol0706@gmail.com', label: 'Email' },
     ],
