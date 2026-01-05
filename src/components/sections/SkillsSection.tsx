@@ -14,24 +14,7 @@ import {
     Code2,
     CheckCircle2
 } from 'lucide-react';
-import {
-    SiReact,
-    SiNextdotjs,
-    SiTypescript,
-    SiTailwindcss,
-    SiVercel,
-    SiGithub,
-    SiDocker,
-    SiNodedotjs,
-    SiMongodb,
-    SiPostgresql,
-    SiFigma,
-    SiAmazonwebservices,
-    SiPrisma,
-    SiSupabase,
-    SiRedis
-} from 'react-icons/si';
-import LogoLoop from '@/components/ui/LogoLoop';
+
 
 // Tech stack data with categories and icons
 const skillCategories = [
@@ -144,66 +127,7 @@ export function SkillsSection() {
                 <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-secondary/20 to-transparent" />
             </div>
 
-            {/* Extended Toolkit Tab - Full Width - Moved to Top */}
-            <motion.div
-                initial={{ opacity: 0, y: 40 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-                transition={{ delay: 0.2, duration: 1 }}
-                className="relative z-10 w-full mb-24"
-            >
-                <div className="container mx-auto px-4 mb-10 text-center">
-                    <div className="inline-flex items-center justify-center gap-3 px-6 py-2.5 rounded-full glass border border-white/5 shadow-2xl shadow-black/20">
-                        <Layers className="w-5 h-5 text-primary animate-pulse" />
-                        <span className="text-lg font-bold text-foreground tracking-tight">Extended Technical Toolkit</span>
-                        <Layers className="w-5 h-5 text-secondary animate-pulse" />
-                    </div>
-                </div>
 
-                <div className="w-full mask-linear-fade bg-white/[0.02] border-y border-white/[0.05] py-12 backdrop-blur-[2px]">
-                    <LogoLoop
-                        speed={40}
-                        gap={60}
-                        logoHeight={45}
-                        pauseOnHover={true}
-                        logos={[
-                            { Icon: SiReact, name: "React" },
-                            { Icon: SiNextdotjs, name: "Next.js" },
-                            { Icon: SiTypescript, name: "TypeScript" },
-                            { Icon: SiTailwindcss, name: "Tailwind CSS" },
-                            { Icon: SiVercel, name: "Vercel" },
-                            { Icon: SiGithub, name: "GitHub" },
-                            { Icon: SiDocker, name: "Docker" },
-                            { Icon: SiNodedotjs, name: "Node.js" },
-                            { Icon: SiMongodb, name: "MongoDB" },
-                            { Icon: SiPostgresql, name: "PostgreSQL" },
-                            { Icon: SiFigma, name: "Figma" },
-                            { Icon: SiAmazonwebservices, name: "AWS" },
-                            { Icon: SiPrisma, name: "Prisma" },
-                            { Icon: SiSupabase, name: "Supabase" },
-                            { Icon: SiRedis, name: "Redis" }
-                        ].map((skill, index) => ({
-                            node: (
-                                <div
-                                    key={skill.name}
-                                    className="group/logo flex flex-col items-center justify-center gap-3 cursor-pointer"
-                                >
-                                    <div className="p-3 rounded-2xl bg-white/5 ring-1 ring-white/10 group-hover/logo:ring-primary/50 group-hover/logo:bg-primary/5 transition-all duration-300">
-                                        <skill.Icon
-                                            className="w-8 h-8 text-muted-foreground/60 transition-all duration-300 group-hover/logo:text-foreground group-hover/logo:scale-110"
-                                            style={{
-                                                filter: `drop-shadow(0 0 0px ${index % 3 === 0 ? 'oklch(0.7 0.25 265)' : index % 3 === 1 ? 'oklch(0.65 0.2 340)' : 'oklch(0.55 0.3 175)'})`
-                                            }}
-                                        />
-                                    </div>
-                                    <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground/40 group-hover/logo:text-primary transition-colors opacity-0 group-hover/logo:opacity-100 transform translate-y-2 group-hover/logo:translate-y-0 duration-300 absolute -bottom-6">
-                                        {skill.name}
-                                    </span>
-                                </div>
-                            )
-                        }))}
-                    />
-                </div>
-            </motion.div>
 
             <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
@@ -279,66 +203,7 @@ export function SkillsSection() {
 
             </div>
 
-            {/* Extended Toolkit Tab - Full Width */}
-            <motion.div
-                initial={{ opacity: 0, y: 40 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-                transition={{ delay: 0.8, duration: 1 }}
-                className="relative z-10 w-full mt-24"
-            >
-                <div className="container mx-auto px-4 mb-10 text-center">
-                    <div className="inline-flex items-center justify-center gap-3 px-6 py-2.5 rounded-full glass border border-white/5 shadow-2xl shadow-black/20">
-                        <Layers className="w-5 h-5 text-primary animate-pulse" />
-                        <span className="text-lg font-bold text-foreground tracking-tight">Extended Technical Toolkit</span>
-                        <Layers className="w-5 h-5 text-secondary animate-pulse" />
-                    </div>
-                </div>
 
-                <div className="w-full mask-linear-fade bg-white/[0.02] border-y border-white/[0.05] py-12 backdrop-blur-[2px]">
-                    <LogoLoop
-                        speed={40}
-                        gap={60}
-                        logoHeight={45}
-                        pauseOnHover={true}
-                        logos={[
-                            { Icon: SiReact, name: "React" },
-                            { Icon: SiNextdotjs, name: "Next.js" },
-                            { Icon: SiTypescript, name: "TypeScript" },
-                            { Icon: SiTailwindcss, name: "Tailwind CSS" },
-                            { Icon: SiVercel, name: "Vercel" },
-                            { Icon: SiGithub, name: "GitHub" },
-                            { Icon: SiDocker, name: "Docker" },
-                            { Icon: SiNodedotjs, name: "Node.js" },
-                            { Icon: SiMongodb, name: "MongoDB" },
-                            { Icon: SiPostgresql, name: "PostgreSQL" },
-                            { Icon: SiFigma, name: "Figma" },
-                            { Icon: SiAmazonwebservices, name: "AWS" },
-                            { Icon: SiPrisma, name: "Prisma" },
-                            { Icon: SiSupabase, name: "Supabase" },
-                            { Icon: SiRedis, name: "Redis" }
-                        ].map((skill, index) => ({
-                            node: (
-                                <div
-                                    key={skill.name}
-                                    className="group/logo flex flex-col items-center justify-center gap-3 cursor-pointer"
-                                >
-                                    <div className="p-3 rounded-2xl bg-white/5 ring-1 ring-white/10 group-hover/logo:ring-primary/50 group-hover/logo:bg-primary/5 transition-all duration-300">
-                                        <skill.Icon
-                                            className="w-8 h-8 text-muted-foreground/60 transition-all duration-300 group-hover/logo:text-foreground group-hover/logo:scale-110"
-                                            style={{
-                                                filter: `drop-shadow(0 0 0px ${index % 3 === 0 ? 'oklch(0.7 0.25 265)' : index % 3 === 1 ? 'oklch(0.65 0.2 340)' : 'oklch(0.55 0.3 175)'})`
-                                            }}
-                                        />
-                                    </div>
-                                    <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground/40 group-hover/logo:text-primary transition-colors opacity-0 group-hover/logo:opacity-100 transform translate-y-2 group-hover/logo:translate-y-0 duration-300 absolute -bottom-6">
-                                        {skill.name}
-                                    </span>
-                                </div>
-                            )
-                        }))}
-                    />
-                </div>
-            </motion.div>
         </section >
     );
 }
