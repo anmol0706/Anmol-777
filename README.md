@@ -1,36 +1,170 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Modern Developer Portfolio
 
-## Getting Started
+A stunning, high-performance, mobile-first personal portfolio website built with Next.js, React, Tailwind CSS, and Framer Motion.
 
-First, run the development server:
+![Portfolio Preview](./preview.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Features
+
+### Core Features
+- 🎨 **Modern Dark Theme** - Premium dark-mode friendly UI with gradient accents
+- 📱 **Mobile-First Design** - Fully responsive across all devices
+- ⚡ **High Performance** - Optimized with Next.js App Router and Turbopack
+- 🎭 **Smooth Animations** - Powered by Framer Motion and GSAP
+- 🌊 **Premium Scrolling** - Lenis smooth scroll integration
+- ♿ **Accessible** - Built with accessibility best practices
+
+### Sections
+1. **Hero Section** - Animated name reveal, professional title, and CTAs
+2. **About Me** - Professional summary with highlight cards and stats
+3. **Skills / Tech Stack** - Categorized skills with animated progress bars
+4. **Projects Showcase** - Filterable project grid with hover effects
+5. **Certificates** - Professional certifications with modal viewer
+6. **Contact** - Validated contact form with React Hook Form & Zod
+
+### Extra Enhancements
+- 🌟 Animated particle background
+- 🎯 Custom cursor (desktop)
+- 📊 Scroll progress indicator
+- ⏳ Loading screen animation
+- 🔍 SEO optimized with sitemap and robots.txt
+- 🎉 404 and error pages
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|----------|-------------|
+| **Framework** | Next.js 16, React 19 |
+| **Language** | TypeScript |
+| **Styling** | Tailwind CSS, shadcn/ui |
+| **Animations** | Framer Motion, GSAP |
+| **Smooth Scroll** | Lenis |
+| **Forms** | React Hook Form, Zod |
+| **Icons** | Lucide React |
+
+## 📦 Project Structure
+
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── globals.css         # Global styles & CSS variables
+│   ├── layout.tsx          # Root layout with providers
+│   ├── page.tsx            # Home page
+│   ├── not-found.tsx       # 404 page
+│   ├── error.tsx           # Error page
+│   ├── sitemap.ts          # Dynamic sitemap
+│   └── robots.ts           # Robots.txt config
+├── components/
+│   ├── layout/             # Navbar, Footer
+│   ├── sections/           # Page sections (Hero, About, etc.)
+│   ├── providers/          # Context providers (SmoothScroll)
+│   └── ui/                 # Reusable UI components (shadcn/ui + custom)
+├── data/
+│   └── portfolio.ts        # Portfolio content data
+└── lib/
+    └── utils.ts            # Utility functions (cn)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
+- Node.js 18+
+- npm or yarn
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Installation
 
-## Learn More
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/portfolio.git
+cd portfolio
+```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install dependencies:
+```bash
+npm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Open [http://localhost:3000](http://localhost:3000)
 
-## Deploy on Vercel
+### Build for Production
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+npm start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎨 Customization
+
+### Update Your Information
+
+Edit `src/data/portfolio.ts` to customize:
+- Personal details (name, title, email, etc.)
+- About section content
+- Skills and proficiency levels
+- Projects
+- Certificates
+- Social links
+
+### Styling
+
+The design system uses CSS variables defined in `globals.css`:
+- Primary color (purple): `--primary`
+- Secondary color (pink): `--secondary`
+- Accent color (teal): `--accent`
+
+### Adding Projects
+
+Add new projects to the `projectsData` array in `src/data/portfolio.ts`:
+
+```typescript
+{
+  id: 7,
+  title: 'Your Project',
+  description: 'Project description',
+  tech: ['Tech1', 'Tech2'],
+  liveUrl: 'https://...',
+  githubUrl: 'https://...',
+  category: 'fullstack', // 'frontend' | 'backend' | 'fullstack'
+  featured: true
+}
+```
+
+## 📱 Responsive Breakpoints
+
+| Breakpoint | Width |
+|------------|-------|
+| Mobile | < 640px |
+| Tablet | 640px - 1024px |
+| Desktop | > 1024px |
+
+## 🔧 Configuration
+
+### Environment Variables
+
+No environment variables required for basic setup. For production:
+
+```env
+# Optional: Analytics, Form submission API, etc.
+NEXT_PUBLIC_SITE_URL=https://yourdomain.com
+```
+
+## 📄 License
+
+MIT License - feel free to use this for your own portfolio!
+
+## 🙏 Acknowledgments
+
+- [shadcn/ui](https://ui.shadcn.com/) - UI Components
+- [Framer Motion](https://www.framer.com/motion/) - Animations
+- [GSAP](https://greensock.com/gsap/) - Advanced animations
+- [Lenis](https://lenis.studiofreight.com/) - Smooth scrolling
+- [Lucide](https://lucide.dev/) - Icons
+
+---
+
+Made with ❤️ and lots of ☕
