@@ -22,14 +22,14 @@ const contactSchema = z.object({
 type ContactFormData = z.infer<typeof contactSchema>;
 
 const contactInfo = [
-    { icon: Mail, label: 'Email', value: 'anmol0706@gmail.com', href: 'mailto:anmol0706@gmail.com' },
+    { icon: Mail, label: 'Email', value: 'anmolmalviya4328@gmail.com', href: 'mailto:anmolmalviya4328@gmail.com' },
     { icon: Github, label: 'GitHub', value: 'github.com/anmol0706', href: 'https://github.com/anmol0706' },
     { icon: MapPin, label: 'Location', value: 'India', href: null },
 ];
 
 const socialLinks = [
     { icon: Github, label: 'GitHub', href: 'https://github.com/anmol0706' },
-    { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com/in/anmol-malviya' },
+    { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/anmol-malviya27/' },
 
     { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/anmol_20_7_/?hl=en' },
 ];

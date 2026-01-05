@@ -5,7 +5,7 @@ export const siteConfig = {
     name: "Anmol Malviya",
     title: "Full-Stack Web Developer",
     tagline: "I enjoy building real-world web applications with modern technologies.",
-    email: "anmol0706@gmail.com",
+    email: "anmolmalviya4328@gmail.com",
     phone: "+91 XXXXXXXXXX",
     location: "India",
     availability: "Available for freelance work",
@@ -14,7 +14,7 @@ export const siteConfig = {
     social: {
         github: "https://github.com/anmol0706",
 
-        linkedin: "https://linkedin.com/in/anmol-malviya",
+        linkedin: "https://www.linkedin.com/in/anmol-malviya27/",
         twitter: "https://twitter.com",
         instagram: "https://www.instagram.com/anmol_20_7_/?hl=en",
     },
